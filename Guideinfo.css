@@ -1,0 +1,80 @@
+body{
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-image: url("../DSGN-project1/pictures/background4.jpg")
+}
+
+.main_menu{
+    background-color: #322b29 ;
+    position:fixed;
+    width:100%;
+}
+
+.myFlex{
+    display: flex;
+    justify-content: space-between;
+    color:antiquewhite;
+    padding:7px;
+}
+.my_logo{
+    font-size:2rem;
+    font-weight: bold;
+}
+
+.my_logo y{
+    color:cornflowerblue;
+}
+
+.my_profile{
+   background-color: antiquewhite;
+   width:40px;
+   height:40px;
+   border-radius: 50%;
+}
+
+.my_p{
+    font-size:1rem;
+    font-weight: bold;
+}
+.my_p:hover{
+   font-size: 1.5rem;
+}
+
+.my_p a{
+    list-style-type: none;
+    color:burlywood;
+}
+
+.my_p a:hover{
+    list-style-type: none;
+    color:burlywood;
+    text-decoration: none;
+}
+
+.Box{
+    background-color: steelblue;
+    padding:5px;
+    margin-top:70px;
+    border: 3px solid cornflowerblue;
+    border-radius: 7px;
+    box-shadow: 7px 10px aquamarine;
+}
+
+.Text1{
+    font-weight: bold;
+    font-size:20px;
+    margin-top: 15px;
+    font-style:italic;
+    color:antiquewhite;
+}
+
+.Text1 a{
+    list-style-type: none;
+    color:burlywood;
+}
+
+.Text1 a:hover{
+    list-style-type: none;
+    color:burlywood;
+    text-decoration: none;
+}

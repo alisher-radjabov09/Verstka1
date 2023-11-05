@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Stack Overflow</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Questions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tags</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <!-- Questions List -->
+        <div class="card mb-3">
+          <div class="card-header">
+            <h5>All Questions</h5>
+          </div>
+          <div class="card-body">
+            <div class="question">
+              <h6><a href="#">Question Title</a></h6>
+              <p>Question Description</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small>Asked by User</small>
+                <small>10 votes</small>
+              </div>
+            </div>
+            <!-- Repeat the structure for more questions -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <!-- Sidebar -->
+        <div class="card">
+          <div class="card-body">
+            <h5>Top Tags</h5>
+            <ul class="list-group">
+              <li class="list-group-item"><a href="#">Tag 1</a></li>
+              <li class="list-group-item"><a href="#">Tag 2</a></li>
+              <li class="list-group-item"><a href="#">Tag 3</a></li>
+              <!-- Add more tags here -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question Submission -->
+  <div class="container mt-4">
+    <h5>Ask a Question</h5>
+    <form action="/submit_question" method="POST">
+      <div class="mb-3">
+        <label for="question-title" class="form-label">Question Title</label>
+        <input type="text" class="form-control" id="question-title" name="question_title">
+      </div>
+      <div class="mb-3">
+        <label for="question-description" class="form-label">Question Description</label>
+        <textarea class="form-control" id="question-description" name="question_description"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Answer Submission -->
+  <div class="container mt-4">
+    <h5>Answer a Question</h5>
+    <form action="/submit_answer" method="POST">
+      <div class="mb-3">
+        <label for="answer-description" class="form-label">Your Answer</label>
+        <textarea class="form-control" id="answer-description" name="answer_description"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center p-3">
+    <div class="container">
+      <p>&copy; 2023 Stack Overflow. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

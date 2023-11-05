@@ -1,0 +1,14 @@
+
+body{
+    margin: 0;
+}
+
+.header{
+  background-image: url('back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+
+
